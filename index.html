@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Metadados de codificação e responsividade para dispositivos móveis -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rhyan Dos Anjos Andrade | Back End Developer</title>
 
-  <!-- Carregamento das fontes oficiais do projeto via Google Fonts: JetBrains Mono e Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Folha de estilos unificada externa -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-  <!-- ========================================================================
-       CABEÇALHO FIXO
-       Fixo no topo da viewport com efeito glassmorphism escuro.
-       z-index 9999 configurado para garantir clique imediato em todos os links.
-       ======================================================================== -->
+  <!-- Cabeçalho fixo com navegação principal -->
   <header class="site-header" role="banner">
-    <!-- Logotipo com imagem do Tux Romano e link de retorno para o topo -->
     <div class="header-logo">
       <a href="#" aria-label="Voltar ao início" title="Voltar ao início">
         <img src="./assets/img/roman_tux.jpg" alt="Logo Linux Tux" onerror="this.style.display='none';">
@@ -30,7 +22,6 @@
       </a>
     </div>
 
-    <!-- Menu de navegação por âncoras para as seções principais da página -->
     <nav role="navigation" aria-label="Navegação principal">
       <ul class="nav-links">
         <li><a href="#sobre">SOBRE</a></li>
@@ -41,24 +32,15 @@
     </nav>
   </header>
 
-  <!-- ========================================================================
-       SEÇÃO HERO
-       Apresentação centralizada com nome digitado dinamicamente via JavaScript.
-       ======================================================================== -->
+  <!-- Seção Hero: Apresentação principal -->
   <section class="hero" id="home">
     <div class="hero-inner">
-      <!-- Título preenchido pelo script.js caractere por caractere (sem chaves) -->
       <h1 class="hero-name font-mono" id="hero-name" aria-label="Rhyan Dos Anjos Andrade"></h1>
-
-      <!-- Cargo / Especialização técnica -->
       <p class="hero-title font-mono">Back End Developer</p>
-
-      <!-- Resumo técnico e proposta de valor -->
       <p class="hero-desc">
         Integrando desenvolvimento, operações e segurança no ciclo de vida do software.
       </p>
 
-      <!-- Botões de chamada para ação (CTA) -->
       <div class="hero-cta">
         <a href="#projetos" class="btn btn-primary">Meus Projetos</a>
         <a href="#contato" class="btn btn-secondary">Contato</a>
@@ -66,25 +48,17 @@
     </div>
   </section>
 
-  <!-- Janelas Neovim holográficas renderizadas no background via JavaScript -->
+  <!-- Terminais holográficos renderizados no background -->
   <div class="ruins-windows" id="ruins-windows" aria-hidden="true"></div>
 
-  <!-- ========================================================================
-       CONTEÚDO PRINCIPAL (MAIN)
-       ======================================================================== -->
   <main>
-    <!-- ========================================================================
-         SEÇÃO SOBRE MIM
-         Container master com janelas duplas, cabeçalho empilhado e crachá de estágio
-         ======================================================================== -->
+    <!-- Seção Sobre Mim -->
     <section id="sobre" class="about-section">
       <div class="about-master-card">
         
-        <!-- Cabeçalho integrado: Título -> Badge de Estágio -> Subtítulo -->
         <div class="about-header-wrap">
           <h2 class="contact-title">SOBRE MIM</h2>
           
-          <!-- Badge compacto destacando disponibilidade para estágio com ponto pulsante -->
           <div class="internship-badge" title="Disponível para oportunidades no período da tarde ou noite">
             <span class="badge-pulse"></span>
             <span>Buscando Estágio</span>
@@ -93,12 +67,9 @@
           <p class="contact-subtitle">Construindo bases sólidas e automatizadas para sistemas modernos.</p>
         </div>
 
-        <!-- Grade contendo as 2 janelas de apresentação -->
         <div class="about-cards-grid">
           
-          <!-- JANELA 1: Formação acadêmica na Fatec e liderança técnica na AWS -->
           <div class="about-subcard">
-            <!-- Barra superior com controles visuais de janela estilo macOS -->
             <div class="about-subcard-header">
               <div class="window-dots">
                 <span class="dot dot-red"></span>
@@ -107,7 +78,6 @@
               </div>
             </div>
 
-            <!-- Corpo textual com destaques em ocre -->
             <div class="about-subcard-body">
               <p class="about-lead-text">
                 Sou estudante de <strong class="text-highlight">Análise e Desenvolvimento de Sistemas</strong> no 
@@ -119,9 +89,7 @@
             </div>
           </div>
 
-          <!-- JANELA 2: Foco técnico em Back-End, cultura DevOps e estágio -->
           <div class="about-subcard">
-            <!-- Barra superior simétrica -->
             <div class="about-subcard-header">
               <div class="window-dots">
                 <span class="dot dot-red"></span>
@@ -147,26 +115,18 @@
       </div>
     </section>
 
-    <!-- ========================================================================
-         SEÇÃO HABILIDADES
-         Container master com 3 janelas independentes (DevStack, Workflow e Infra).
-         Utiliza Skill Icons oficiais, Postman, Bruno em dourado e Bash destacado.
-         ======================================================================== -->
+    <!-- Seção Habilidades -->
     <section id="habilidades" class="skills-section">
       <div class="skills-master-card">
         
-        <!-- Cabeçalho da seção de habilidades -->
         <div class="skills-header-wrap">
           <h2 class="contact-title">HABILIDADES</h2>
           <p class="contact-subtitle">Linguagens, ferramentas e ecossistema técnico aplicado.</p>
         </div>
 
-        <!-- Grade contendo as 3 janelas de habilidades -->
         <div class="skills-cards-grid">
           
-          <!-- ========================================
-               CAIXA 1: DEV STACK (IDEs, Ferramentas e Linguagens)
-               ======================================== -->
+          <!-- Dev Stack -->
           <div class="skills-subcard">
             <div class="skills-subcard-header">
               <div class="window-dots">
@@ -179,7 +139,6 @@
 
             <div class="skills-subcard-body">
               
-              <!-- Subdivisão: IDEs e Ferramentas de Desenvolvimento -->
               <div class="skills-subgroup">
                 <span class="skills-group-label font-mono">// IDEs &amp; Ferramentas</span>
                 <div class="skills-icons-row">
@@ -193,10 +152,8 @@
                 </div>
               </div>
 
-              <!-- Linha divisória sutil interna -->
               <div class="skills-divider"></div>
 
-              <!-- Subdivisão: Linguagens de Programação -->
               <div class="skills-subgroup">
                 <span class="skills-group-label font-mono">// Linguagens</span>
                 <div class="skills-icons-row">
@@ -211,9 +168,7 @@
             </div>
           </div>
 
-          <!-- ========================================
-               CAIXA 2: WORKFLOW (Versionamento, Editores, Docker e Bash)
-               ======================================== -->
+          <!-- Workflow -->
           <div class="skills-subcard">
             <div class="skills-subcard-header">
               <div class="window-dots">
@@ -226,7 +181,6 @@
 
             <div class="skills-subcard-body">
               
-              <!-- Subdivisão: Versionamento & Editores de Código -->
               <div class="skills-subgroup">
                 <span class="skills-group-label font-mono">// Versionamento &amp; Editores</span>
                 <div class="skills-icons-row">
@@ -238,18 +192,14 @@
                 </div>
               </div>
 
-              <!-- Linha divisória interna -->
               <div class="skills-divider"></div>
 
-              <!-- Subdivisão: Containerização & Shell com Bash destacado -->
               <div class="skills-subgroup">
                 <span class="skills-group-label font-mono">// Containerização &amp; Shell</span>
                 
                 <div class="skills-workflow-bottom">
-                  <!-- Docker -->
                   <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="skill-img" title="Docker Containers">
                   
-                  <!-- GNU Bash com moldura luminosa e texto -->
                   <div class="bash-highlight-badge" title="GNU Bash Shell Scripting">
                     <img src="https://skillicons.dev/icons?i=bash" alt="Bash" class="skill-img">
                     <span class="bash-badge-text font-mono">BASH</span>
@@ -260,9 +210,7 @@
             </div>
           </div>
 
-          <!-- ========================================
-               CAIXA 3: CLOUD & INFRAESTRUTURA (Lado a Lado)
-               ======================================== -->
+          <!-- Infraestrutura -->
           <div class="skills-subcard">
             <div class="skills-subcard-header">
               <div class="window-dots">
@@ -276,7 +224,6 @@
             <div class="skills-subcard-body infra-body-center">
               <span class="skills-group-label font-mono">// Cloud &amp; Infraestrutura</span>
               
-              <!-- Ícones de infra dispostos horizontalmente lado a lado -->
               <div class="skills-icons-row infra-row">
                 <img src="https://skillicons.dev/icons?i=aws" alt="AWS" class="skill-img infra-img" title="Amazon Web Services">
                 <img src="https://skillicons.dev/icons?i=linux" alt="Linux" class="skill-img infra-img" title="Linux Environment">
@@ -291,27 +238,19 @@
       </div>
     </section>
 
-    <!-- ========================================================================
-         SEÇÃO PROJETOS
-         Cards estilo macOS com botões particionados e repositórios oficiais
-         ======================================================================== -->
+    <!-- Seção Projetos -->
     <section id="projetos" class="projects-section">
       <div class="projects-master-card">
         
-        <!-- Cabeçalho centralizado da seção de Projetos -->
         <div class="projects-header-wrap">
           <h2 class="contact-title">PROJETOS</h2>
           <p class="contact-subtitle">Aplicações, automações e projetos em destaque no ecossistema de software.</p>
         </div>
 
-        <!-- Grade responsiva contendo os cards dos projetos -->
         <div class="projects-cards-grid">
           
-          <!-- ====================================================================
-               CARD 1: SISTEMA BANCÁRIO (Python / Back-End)
-               ==================================================================== -->
+          <!-- Projeto 1: Sistema Bancário -->
           <div class="project-code-card">
-            <!-- Barra superior estilo macOS com controles e nome do arquivo -->
             <div class="project-card-header">
               <div class="window-dots">
                 <span class="dot dot-red"></span>
@@ -321,7 +260,6 @@
               <span class="project-filename font-mono">sistema_bancario.py</span>
             </div>
 
-            <!-- Conteúdo informativo e botão de redirecionamento particionado -->
             <div class="project-card-body">
               <h3 class="project-title font-mono">Sistema Bancário</h3>
               
@@ -329,7 +267,6 @@
                 Implementação de operações bancárias como saque, depósito, extrato e controle de saldo com validações de regras de negócio.
               </p>
 
-              <!-- Botão particionado: Ícone GitHub + Divisória + Rótulo -->
               <a href="https://github.com/Rhyan121121/Sistema_Bancario" 
                  target="_blank" 
                  rel="noopener noreferrer" 
@@ -345,11 +282,8 @@
             </div>
           </div>
 
-          <!-- ====================================================================
-               CARD 2: ABNT CONVERTER API (Go / CrossRef API / Back-End)
-               ==================================================================== -->
+          <!-- Projeto 2: ABNT Converter API -->
           <div class="project-code-card">
-            <!-- Barra superior com nome do arquivo Go correspondente -->
             <div class="project-card-header">
               <div class="window-dots">
                 <span class="dot dot-red"></span>
@@ -359,7 +293,6 @@
               <span class="project-filename font-mono">abnt_converter.go</span>
             </div>
 
-            <!-- Conteúdo informativo destacando o consumo da CrossRef -->
             <div class="project-card-body">
               <h3 class="project-title font-mono">ABNT Converter API</h3>
               
@@ -367,7 +300,6 @@
                 API REST desenvolvida em Go que consome referências e metadados de publicações acadêmicas da CrossRef e os converte automaticamente para o padrão ABNT.
               </p>
 
-              <!-- Botão particionado para acesso ao repositório -->
               <a href="https://github.com/Rhyan121121/abnt-converter-api" 
                  target="_blank" 
                  rel="noopener noreferrer" 
@@ -383,11 +315,8 @@
             </div>
           </div>
 
-          <!-- ====================================================================
-               CARD 3: FILTRAGEM DE SCORE & REPUTAÇÃO (Go / PostgreSQL / Lead Developer House)
-               ==================================================================== -->
+          <!-- Projeto 3: Filtragem de Score & Reputação (Lead Developer House) -->
           <div class="project-code-card">
-            <!-- Barra superior com indicação de arquivo em Go -->
             <div class="project-card-header">
               <div class="window-dots">
                 <span class="dot dot-red"></span>
@@ -398,7 +327,6 @@
             </div>
 
             <div class="project-card-body">
-              <!-- Selo identificador destacando a organização Lead Developer House -->
               <div class="project-org-badge font-mono">
                 <span>Lead Developer House</span>
               </div>
@@ -409,7 +337,6 @@
                 API em Go com PostgreSQL para cálculo dinâmico de score e reputação de empresas. Analisa peso e histórico de avaliações, detectando fraudes e padrões anômalos de bots.
               </p>
 
-              <!-- Botão particionado para acesso ao repositório oficial da organização -->
               <a href="https://github.com/Lead-Developer-House/api_filtragem_score-" 
                  target="_blank" 
                  rel="noopener noreferrer" 
@@ -425,11 +352,8 @@
             </div>
           </div>
 
-          <!-- ====================================================================
-               CARD 4: TICKETFLOW (C# / ASP.NET Core / PostgreSQL / EF Core)
-               ==================================================================== -->
+          <!-- Projeto 4: TicketFlow -->
           <div class="project-code-card">
-            <!-- Barra superior com nome do arquivo C# correspondente -->
             <div class="project-card-header">
               <div class="window-dots">
                 <span class="dot dot-red"></span>
@@ -439,7 +363,6 @@
               <span class="project-filename font-mono">TicketFlow.cs</span>
             </div>
 
-            <!-- Conteúdo informativo sobre a arquitetura do TicketFlow -->
             <div class="project-card-body">
               <h3 class="project-title font-mono">TicketFlow</h3>
               
@@ -447,7 +370,6 @@
                 API RESTful em C# e ASP.NET Core para gestão de eventos e comercialização de tickets, com controle de concorrência na reserva de assentos e persistência em PostgreSQL via Entity Framework Core.
               </p>
 
-              <!-- Botão particionado para acesso ao repositório oficial -->
               <a href="https://github.com/Rhyan121121/TicketFlow" 
                  target="_blank" 
                  rel="noopener noreferrer" 
@@ -463,11 +385,8 @@
             </div>
           </div>
 
-          <!-- ====================================================================
-               CARD 5: MARKET DATA (Python / CLI / LibreOffice UNO API / pyoo)
-               ==================================================================== -->
+          <!-- Projeto 5: Market Data -->
           <div class="project-code-card">
-            <!-- Barra superior com nome do arquivo Python correspondente -->
             <div class="project-card-header">
               <div class="window-dots">
                 <span class="dot dot-red"></span>
@@ -477,7 +396,6 @@
               <span class="project-filename font-mono">market_data.py</span>
             </div>
 
-            <!-- Conteúdo informativo sobre o sistema CLI e integração pyoo -->
             <div class="project-card-body">
               <h3 class="project-title font-mono">Market Data</h3>
               
@@ -485,7 +403,6 @@
                 CLI em Python com persistência local e integração ao LibreOffice via UNO API (pyoo), automatizando a geração de planilhas formatadas (.ods) e sua exportação direta em imagens.
               </p>
 
-              <!-- Botão particionado para acesso ao repositório oficial -->
               <a href="https://github.com/Rhyan121121/Market_Data" 
                  target="_blank" 
                  rel="noopener noreferrer" 
@@ -505,35 +422,28 @@
       </div>
     </section>
 
-    <!-- ========================================================================
-         SEÇÃO CONTATO
-         Card com os 4 canais de comunicação com SVG oficial da AWS inline
-         ======================================================================== -->
+    <!-- Seção Contato -->
     <section id="contato" class="contact-section">
       <div class="contact-card">
         <h2 class="contact-title">CONTATO</h2>
         <p class="contact-subtitle">Vamos conversar? Me encontre nas redes abaixo.</p>
 
         <div class="contact-links">
-          <!-- Botão GitHub -->
           <a href="https://github.com/Rhyan121121" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Rhyan Dos Anjos Andrade">
             <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.09.68-.217.68-.482 0-.237-.009-.866-.014-1.7-2.782.604-3.369-1.341-3.369-1.341-.455-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.349-1.087.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.031-2.683-.104-.252-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.57 9.57 0 0 1 12 6.836c.85.004 1.705.114 2.504.333 1.91-1.294 2.748-1.025 2.748-1.025.546 1.377.203 2.395.1 2.647.642.699 1.029 1.592 1.029 2.683 0 3.842-2.338 4.688-4.566 4.935.359.31.68.921.68 1.856 0 1.341-.012 2.421-.012 2.751 0 .267.18.578.688.48C19.137 20.166 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
             <span class="contact-label">GitHub</span>
           </a>
 
-          <!-- Botão LinkedIn -->
           <a href="https://www.linkedin.com/in/rhyan-dos-anjos-andrade/" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Rhyan Dos Anjos Andrade">
             <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
             <span class="contact-label">LinkedIn</span>
           </a>
 
-          <!-- Botão E-mail -->
           <a href="mailto:rhyanaa1211@gmail.com" class="contact-link" aria-label="Enviar e-mail para Rhyan Dos Anjos Andrade">
             <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2.01 4C.894 4 0 4.895 0 6.01v11.98C0 19.106.894 20 2.01 20h19.98C23.106 20 24 19.105 24 17.99V6.01C24 4.894 23.106 4 21.99 4H2.01zM2 6.5l10 7.5 10-7.5v10.5H2V6.5zM2.5 5.5h19L12 13 2.5 5.5z"/></svg>
             <span class="contact-label">E-mail</span>
           </a>
 
-          <!-- Botão AWS Builder Center -->
           <a href="https://builder.aws.com/community/@rhyan121121?tab=badges" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Perfil AWS Builder Center de Rhyan Dos Anjos Andrade">
             <svg class="contact-icon" viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
               <circle cx="24" cy="24" r="21.5"/>
@@ -551,7 +461,6 @@
     </section>
   </main>
 
-  <!-- Script modularizado para digitação e background -->
   <script src="./js/script.js"></script>
 </body>
 </html>

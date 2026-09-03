@@ -1,7 +1,3 @@
-/* ========================================================================
-   VARIÁVEIS CSS E CONFIGURAÇÃO DA PALETA
-   Cores inspiradas em estética clássica/romana (ocre, terracota, tons escuros)
-   ======================================================================== */
 :root {
   --bg: #000000;
   --bg-elevated: #0d0c0a;
@@ -17,14 +13,12 @@
   --glass-border: rgba(196, 149, 97, 0.18);
 }
 
-/* Reset básico para dimensões previsíveis em todos os elementos */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Rolagem suave nativa com compensação de 90px para o cabeçalho fixo */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
@@ -35,13 +29,9 @@ html {
   }
 }
 
-/* ========================================================================
-   CORPO DA PÁGINA (Background e Parallax)
-   ======================================================================== */
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: var(--bg);
-  /* Camada gradiente escura sobreposta à imagem de fundo temática */
   background-image:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
     url('../assets/img/background.jpg');
@@ -54,14 +44,10 @@ body {
   min-height: 100vh;
 }
 
-/* Classe utilitária para tipografia monoespaçada */
 .font-mono {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* ========================================================================
-   ESTILOS DE PAINEL GLASSMORPHISM
-   ======================================================================== */
 .glass-panel {
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
@@ -70,9 +56,6 @@ body {
   border-radius: 8px;
 }
 
-/* ========================================================================
-   JANELAS DE CÓDIGO FLUTUANTES (TERMINAIS NEOVIM NO BACKGROUND)
-   ======================================================================== */
 .ruins-windows {
   position: fixed;
   inset: 0;
@@ -92,8 +75,8 @@ body {
   border: 1px solid rgba(196, 149, 97, 0.22);
   border-radius: 5px;
   box-shadow:
-    0 0 20px rgba(184, 134, 79, 0.06),
-    inset 0 0 12px rgba(196, 149, 97, 0.03);
+    0 0 22px rgba(184, 134, 79, 0.08),
+    inset 0 0 14px rgba(196, 149, 97, 0.03);
   white-space: pre;
   overflow: hidden;
   opacity: 0.4;
@@ -137,9 +120,6 @@ body {
   }
 }
 
-/* ========================================================================
-   CABEÇALHO FIXO (site-header)
-   ======================================================================== */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -236,9 +216,6 @@ body {
 .nav-links a:hover { color: var(--accent); }
 .nav-links a:hover::after { transform: scaleX(1); }
 
-/* ========================================================================
-   SEÇÃO HERO
-   ======================================================================== */
 main, section.hero { z-index: 10; }
 section.hero > .hero-inner { position: relative; z-index: 11; }
 
@@ -355,9 +332,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   box-shadow: 0 0 0 3px rgba(184, 134, 79, 0.3);
 }
 
-/* ========================================================================
-   SEÇÃO SOBRE MIM
-   ======================================================================== */
 .about-section {
   display: flex;
   justify-content: center;
@@ -504,9 +478,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   font-weight: 600;
 }
 
-/* ========================================================================
-   SEÇÃO HABILIDADES (3 Caixas com Skill Icons)
-   ======================================================================== */
 .skills-section {
   display: flex;
   justify-content: center;
@@ -691,10 +662,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   height: 48px;
 }
 
-/* ========================================================================
-   SEÇÃO PROJETOS (ESTILO JANELA DE CÓDIGO MACOS)
-   Cards com botões particionados e grade simétrica de duas a três colunas
-   ======================================================================== */
 .projects-section {
   display: flex;
   justify-content: center;
@@ -732,7 +699,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   margin-bottom: 0;
 }
 
-/* Grade auto-ajustável que distribui os cards de projetos simetricamente */
 .projects-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -740,7 +706,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   width: 100%;
 }
 
-/* Estrutura do card estilo janela de editor de código */
 .project-code-card {
   background: rgba(18, 15, 12, 0.85);
   border: 1px solid rgba(196, 149, 97, 0.18);
@@ -759,7 +724,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   box-shadow: 0 12px 30px rgba(184, 134, 79, 0.15);
 }
 
-/* Barra superior da janela com controles macOS */
 .project-card-header {
   background: rgba(28, 23, 19, 0.95);
   padding: 10px 14px;
@@ -769,7 +733,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   position: relative;
 }
 
-/* Nome do arquivo no centro da barra */
 .project-filename {
   position: absolute;
   left: 50%;
@@ -780,7 +743,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   white-space: nowrap;
 }
 
-/* Corpo interno do card */
 .project-card-body {
   padding: 1.75rem 1.5rem;
   display: flex;
@@ -788,7 +750,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   flex-grow: 1;
 }
 
-/* Selo de identificação para projetos da organização Lead Developer House */
 .project-org-badge {
   display: inline-flex;
   align-items: center;
@@ -805,7 +766,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   margin-bottom: 0.65rem;
 }
 
-/* Título do projeto */
 .project-title {
   font-size: 1.22rem;
   font-weight: 700;
@@ -814,7 +774,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   letter-spacing: -0.01em;
 }
 
-/* Descrição técnica em estilo monoespaçado */
 .project-desc {
   font-size: 0.88rem;
   line-height: 1.65;
@@ -823,7 +782,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   flex-grow: 1;
 }
 
-/* Botão particionado: Ícone + Divisória + Texto */
 .project-repo-btn {
   display: flex;
   align-items: stretch;
@@ -875,9 +833,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   color: var(--ochre);
 }
 
-/* ========================================================================
-   SEÇÃO CONTATO
-   ======================================================================== */
 .contact-section {
   display: flex;
   align-items: center;
@@ -969,9 +924,6 @@ section.hero > .hero-inner { position: relative; z-index: 11; }
   color: var(--accent);
 }
 
-/* ========================================================================
-   RESPONSIVIDADE GERAL
-   ======================================================================== */
 @media (max-width: 950px) {
   .skills-cards-grid {
     grid-template-columns: 1fr;
